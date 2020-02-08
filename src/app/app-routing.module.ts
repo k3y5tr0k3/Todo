@@ -8,7 +8,8 @@ import { TodoListItemComponent } from './todo-list-item/todo-list-item.component
 const routes: Routes = [
   { path: 'add', component: TodoAddComponent },
   { path: 'list', component: TodoListComponent },
-  { path: 'item/:id', component: TodoListItemComponent }
+  { path: 'item/:id', component: TodoListItemComponent },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
