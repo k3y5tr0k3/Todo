@@ -9,17 +9,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoAddComponent } from './todo-add/todo-add.component';
-import { TodoService } from './services/todo.service';
-import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
+import { TodoDataService } from './services/todo-data.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent,
-    TodoAddComponent,
-    TodoListItemComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +28,7 @@ import { TodoListItemComponent } from './todo-list-item/todo-list-item.component
     MatSelectModule
   ],
   providers: [
-    TodoService
+    TodoDataService
   ],
   bootstrap: [AppComponent]
 })
